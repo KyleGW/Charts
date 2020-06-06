@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Metrics - on W3.CSS Template</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
-
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 .w3-sidebar {
@@ -17,18 +15,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   top: 43px;
   bottom: 0;
   height: inherit;
-}
-
-.small-box {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.small-box h3 {
-    font-size: 38px;
-    font-weight: bold;
-    margin: 0 0 10px 0;
-    white-space: nowrap;
-    padding: 0;
 }
 </style>
 <body>
@@ -39,10 +25,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Type 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Customers</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
   </div>
 </div>
@@ -64,49 +50,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
-  
-  <!-- Top row of Stat boxes -->
-  <div class="w3-row w3-padding-64">
-    <div class="w3-col w3-container small-box" style="width:25%">
-      <div class="w3-green w3-margin-left">
-        <p>Month to date</p>
-        <h3>20</h3>
-      </div>
-    </div>
-    <div class="w3-col w3-container w3-blue small-box" style="width:25%"><p>60%</p></div>
-    <div class="w3-col w3-container w3-red" style="width:25%"><p>20%</p></div>
-    <div class="w3-col w3-container w3-yellow" style="width:25%"><p>20%</p></div>
-  </div>
+
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <div class="w3-card-4">
-        <header class="w3-container w3-light-grey"><h3>Issued</h3></header>
-        <div class="w3-container">
-          <p>Chart Here</p>
-          <canvas id="myChart"></canvas>
-          <hr>
-          <p>Little Caption here</p>
-        </div>
-        <button class="w3-button w3-block w3-dark-grey">Number of stuff and things per month in last 12 months</button>
-        </div>
+      <h1 class="w3-text-teal">Heading</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <div class="w3-third w3-container">
-      <div class="w3-card-4">
-
-        <header class="w3-container w3-light-grey">
-          <h3>John Doe</h3>
-        </header>
-        
-        <div class="w3-container">
-          <p>1 new friend request</p>
-          <hr>
-          <img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle">
-          <p>President/CEO at Mighty Schools...</p>
-        </div>
-        
-        <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
-        
-        </div>
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 
@@ -183,6 +136,6 @@ function w3_close() {
   overlayBg.style.display = "none";
 }
 </script>
-<script src="script.js"></script>
+
 </body>
 </html>

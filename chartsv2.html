@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Metrics - Grid Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style - addGrid.css">
+  </head>
+  <body class="page-content">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+          <!-- small box -->
+          <div class="small-box bg-green" id="total_queries" title="only A + AAAA queries">
+              <div class="inner">
+                  <p>Total queries (<span id="unique_clients">-</span> clients)</p>
+                  <h3 class="statistic"><span id="dns_queries_today">45,682</span></h3>
+              </div>
+              <div class="icon">
+                  <i class="fas fa-globe-americas"></i>
+              </div>
+          </div>
+      </div>
+      <!-- ./col -->
+      <div class="col-lg-3 col-sm-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+              <div class="inner">
+                  <p>Queries Blocked</p>
+                  <h3 class="statistic"><span id="ads_blocked_today">6,633</span></h3>
+              </div>
+              <div class="icon">
+                  <i class="fas fa-hand-paper"></i>
+              </div>
+          </div>
+      </div>
+      <!-- ./col -->
+      <div class="col-lg-3 col-sm-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+              <div class="inner">
+                  <p>Percent Blocked</p>
+                  <h3 class="statistic"><span id="ads_percentage_today">10.9%</span></h3>
+              </div>
+              <div class="icon">
+                  <i class="fas fa-chart-pie"></i>
+              </div>
+          </div>
+      </div>
+      <!-- ./col -->
+      <div class="col-lg-3 col-sm-6">
+          <!-- small box -->
+          <div class="small-box bg-red" title="Title 1">
+              <div class="inner">
+                  <p>Domains on Blocklist</p>
+                  <h3 class="statistic"><span id="domains_being_blocked">55,555</span></h3>
+              </div>
+              <div class="icon">
+                  <i class="fas fa-list-alt"></i>
+              </div>
+          </div>
+      </div>
+      <!-- ./col -->
+  </div>
+  <div class="row">
+    <div>
+      <div class="canvas-container widget">
+        <h1>Issued</h1>
+        <h2>Number of stuff and things per month in last 12 months</h2>
+  
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+  </div>
+      <section class="grid">
+        <article>
+          <div class="canvas-container widget">
+            <h1>Issued</h1>
+            <h2>Number of stuff and things per month in last 12 months</h2>
+      
+            <canvas id="myChart"></canvas>
+        </div>
+        </article>
+
+        <article>
+          <div class="canvas-container">
+            <h1>Requested</h1>
+            <h2>Number of stuff and things requested per month in last 12 months</h2>
+      
+            <canvas id="myChart2" ></canvas>
+         </div>
+      </article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+      </section>
+  
+    
+
+    
+
+    <div class="wrapper">
+      <h1>Issued By Category</h1>
+      <h2>Number of stuff and things completed per month in last 12 months, by Category</h2>
+
+      <canvas id="stackedBar" width="1600" height="900"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
