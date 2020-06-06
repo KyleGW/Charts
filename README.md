@@ -11,3 +11,5 @@ Sources:
 R/Shiny Links
 - https://stackoverflow.com/questions/52396571/stack-bar-plot-for-r-shiny-dashboard
 - https://shiny.rstudio.com/articles/js-build-widget.html
+- https://rmarkdown.rstudio.com/gallery.html
+- https://rmarkdown.rstudio.com/flexdashboard/

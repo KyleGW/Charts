@@ -225,37 +225,37 @@ var dataexample = {
   labels: ["January", "February", "March"],
   datasets: [
     {
-      label: "Apples",
+      label: "Apples Type 1",
       backgroundColor: "rgba(99,255,132,0.2)",
       data: [25, 5, 30],
       stack: 1
     },
     {
-      label: "Bananas",
+      label: "Bananas Type 1",
       backgroundColor: "rgba(99,132,255,0.2)",
       data: [40, 50, 20],
       stack: 1
     },
     {
-      label: "Cookies",
+      label: "Cookies Type 1",
       backgroundColor: "rgba(255,99,132,0.2)",
       data: [60, 20, 20],
       stack: 1
     },
     {
-      label: "Apples",
+      label: "Apples Type 2",
       backgroundColor: "rgba(99,255,132,0.2)",
       data: [20, 10, 30],
       stack: 2
     },
     {
-      label: "Bananas",
+      label: "Bananas Type 2",
       backgroundColor: "rgba(99,132,255,0.2)",
       data: [40, 50, 20],
       stack: 2
     },
     {
-      label: "Cookies",
+      label: "Cookies Type 2",
       backgroundColor: "rgba(255,99,132,0.2)",
       data: [60, 20, 20],
       stack: 2
@@ -284,24 +284,24 @@ var dataexample = {
 var ctx5 = document.getElementById("groupedStackedBar").getContext("2d");
 
 var groupedStackedBar = new Chart(ctx5, {
-  type: 'groupableBar',
+  type: 'bar',
   data: dataexample,
   options: {
-    legend: {
-      labels: {
-        generateLabels: function(chart) {
-          return Chart.defaults.global.legend.labels.generateLabels.apply(this, [chart]).filter(function(item, i){
-          		return i <= 2;
-          });
-        }
-      }
+    title: {
+      display: true,
+      text: 'Chart.js Bar Chart - Stacked'
     },
+    tooltips: {
+      mode: 'index',
+      intersect: false
+    },
+    responsive: true,
     scales: {
-      yAxes: [{
-        ticks: {
-          max: 160,
-        },
+      xAxes: [{
         stacked: true,
+      }],
+      yAxes: [{
+        stacked: true
       }]
     }
   }
